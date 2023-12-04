@@ -61,6 +61,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("custom.lazy-setup")
+require("custom.text-settings")
 
 -- [[ Setting options ]]
 -- See `:help vim.o`
