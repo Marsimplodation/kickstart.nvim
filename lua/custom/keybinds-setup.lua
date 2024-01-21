@@ -23,3 +23,4 @@ vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = 'Go to next diagnos
 vim.keymap.set('n', 'gF', ":vsplit | lua vim.lsp.buf.definition()<CR><C-w>x> | <Esc>:lua vim.notify('Opened in new tab')<CR>")
 -- exit terminal mode
 vim.keymap.set('t', "<Esc>", "<C-\\><C-n>")
+vim.keymap.set('n', '<leader>lf', ':lua vim.lsp.buf.code_action()<CR>')

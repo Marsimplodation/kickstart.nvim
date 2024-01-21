@@ -2,7 +2,7 @@ local dap = require('dap')
 dap.adapters.cppdbg = {
   id = 'cppdbg',
   type = 'executable',
-  command = '~/cpptools/debugAdapters/bin/OpenDebugAD7',
+  command = '/home/marius/cpptools/debugAdapters/bin/OpenDebugAD7',
 }
 
 dap.configurations.cpp = {
