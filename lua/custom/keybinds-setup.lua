@@ -1,7 +1,7 @@
 vim.keymap.set("n", "<leader>e", ':Neotree<CR>')
 vim.keymap.set("n", "<leader>w", ':w<CR>')
 vim.keymap.set("n", "<leader>q", ':q<CR>')
-vim.keymap.set("n", "<F5>", ":!(make run)<CR>")
+vim.keymap.set("n", "<F5>", ":!(make run)<CR> | !<Esc>:lua vim.notify('Done')<CR>")
 
 -- terminal
 vim.keymap.set("n", "<leader>tv", ":vs<CR>:tab term<CR>")
@@ -20,6 +20,6 @@ vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = 'Go to previous dia
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = 'Go to next diagnostic message' })
 --vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Open floating diagnostic message' })
 --vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostics list' })
-
+vim.keymap.set('n', 'gF', ":vsplit | lua vim.lsp.buf.definition()<CR><C-w>x> | <Esc>:lua vim.notify('Opened in new tab')<CR>")
 -- exit terminal mode
 vim.keymap.set('t', "<Esc>", "<C-\\><C-n>")

@@ -63,6 +63,7 @@ vim.opt.rtp:prepend(lazypath)
 require("custom.lazy-setup")
 require("custom.text-settings")
 require("custom.telescope-setup")
+require("custom.dap-setup")
 -- [[ Setting options ]]
 -- See `:help vim.o`
 -- NOTE: You can change these options as you wish!

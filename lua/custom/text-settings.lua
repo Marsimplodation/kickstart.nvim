@@ -1,3 +1,4 @@
+vim.notify = require("notify")
 vim.wo.relativenumber = true
 vim.bo.tabstop = 4
 -- Set highlight on search
@@ -36,5 +37,3 @@ vim.o.completeopt = 'menuone,noselect'
 
 -- NOTE: You should make sure your terminal supports this
 vim.o.termguicolors = true
-
-
