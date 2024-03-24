@@ -5,6 +5,8 @@ return {
 
   dependencies = {
 
+    { "nvim-neotest/nvim-nio" },
+
     -- fancy UI for the debugger
     {
       "rcarriga/nvim-dap-ui",
@@ -31,6 +33,7 @@ return {
         end
       end,
     },
+
 
     -- virtual text for the debugger
     {
