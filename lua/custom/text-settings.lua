@@ -1,5 +1,6 @@
 vim.notify = require("notify")
 vim.wo.relativenumber = true
+vim.bo.expandtab = true
 vim.bo.tabstop = 4
 -- Set highlight on search
 vim.o.hlsearch = false

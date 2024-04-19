@@ -6,6 +6,7 @@ vim.keymap.set("n", "<F5>", ":!(make run)<CR> | !<Esc>:lua vim.notify('Done')<CR
 -- terminal
 vim.keymap.set("n", "<leader>tv", ":vs<CR>:tab term<CR>")
 vim.keymap.set("n", "<leader>th", ":split<CR>:tab term<CR>")
+vim.keymap.set("n", "<leader>tf", "<CMD>lua require('FTerm').toggle()<CR>")
 
 -- Keymaps for better default experience
 -- See `:help vim.keymap.set()`
@@ -24,3 +25,5 @@ vim.keymap.set('n', 'gF', ":vsplit | lua vim.lsp.buf.definition()<CR><C-w>x> | <
 -- exit terminal mode
 vim.keymap.set('t', "<Esc>", "<C-\\><C-n>")
 vim.keymap.set('n', '<leader>lf', ':lua vim.lsp.buf.code_action()<CR>')
+vim.keymap.set('n', '<C-S-j>', "<Esc>:cnext<CR>")
+vim.keymap.set('n', '<C-S-k>', "<Esc>:cprev<CR>")
