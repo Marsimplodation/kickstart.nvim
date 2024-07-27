@@ -27,3 +27,9 @@ vim.keymap.set('t', "<Esc>", "<C-\\><C-n>")
 vim.keymap.set('n', '<leader>lf', ':lua vim.lsp.buf.code_action()<CR>')
 vim.keymap.set('n', '<C-S-j>', "<Esc>:cnext<CR>")
 vim.keymap.set('n', '<C-S-k>', "<Esc>:cprev<CR>")
+--disable arrow keys
+vim.keymap.set('', '<Up>', '<NOP>')
+vim.keymap.set('', '<Down>', '<NOP>')
+vim.keymap.set('', '<Left>', '<NOP>')
+vim.keymap.set('', '<Right>', '<NOP>')
+
