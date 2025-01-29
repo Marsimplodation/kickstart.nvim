@@ -25,11 +25,14 @@ vim.keymap.set('n', 'gF', ":vsplit | lua vim.lsp.buf.definition()<CR><C-w>x> | <
 -- exit terminal mode
 vim.keymap.set('t', "<Esc>", "<C-\\><C-n>")
 vim.keymap.set('n', '<leader>lf', ':lua vim.lsp.buf.code_action()<CR>')
-vim.keymap.set('n', '<C-S-j>', "<Esc>:cnext<CR>")
-vim.keymap.set('n', '<C-S-k>', "<Esc>:cprev<CR>")
+vim.keymap.set('n', '<C-j>', "<Esc>:cnext<CR>")
+vim.keymap.set('n', '<C-k>', "<Esc>:cprev<CR>")
 --disable arrow keys
 vim.keymap.set('', '<Up>', '<NOP>')
 vim.keymap.set('', '<Down>', '<NOP>')
 vim.keymap.set('', '<Left>', '<NOP>')
 vim.keymap.set('', '<Right>', '<NOP>')
+--jump between buffres
+vim.keymap.set('n', '<C-Tab>', "<Esc>:bprev<CR>")
+vim.keymap.set('n', '<S-Tab>', "<Esc>:bnext<CR>")
 

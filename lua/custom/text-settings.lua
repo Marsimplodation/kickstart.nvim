@@ -38,3 +38,15 @@ vim.o.completeopt = 'menuone,noselect'
 
 -- NOTE: You should make sure your terminal supports this
 vim.o.termguicolors = true
+
+
+--- Syntax highlight
+---
+vim.filetype.add({
+  extension = {
+    rchit = "glsl",
+    rgen = "glsl",
+    rmiss = "glsl",
+  }
+})
+
