@@ -6,7 +6,6 @@ vim.keymap.set("n", "<F5>", ":!(make run)<CR> | !<Esc>:lua vim.notify('Done')<CR
 -- terminal
 vim.keymap.set("n", "<leader>tv", ":vs<CR>:tab term<CR>")
 vim.keymap.set("n", "<leader>th", ":split<CR>:tab term<CR>")
-vim.keymap.set("n", "<leader>tf", "<CMD>lua require('FTerm').toggle()<CR>")
 
 -- Keymaps for better default experience
 -- See `:help vim.keymap.set()`
