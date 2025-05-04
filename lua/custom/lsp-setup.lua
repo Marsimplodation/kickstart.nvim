@@ -106,4 +106,5 @@ local on_attach = function(_, bufnr)
         filetypes = (servers[server_name] or {}).filetypes,
       }
     end,
+  vim.diagnostic.config({ virtual_lines = true })
   }

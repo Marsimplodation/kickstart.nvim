@@ -1,4 +1,3 @@
-vim.notify = require("notify")
 vim.wo.relativenumber = true
 vim.bo.expandtab = true
 vim.bo.tabstop = 4

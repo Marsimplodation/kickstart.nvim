@@ -154,16 +154,16 @@ end, 0)
   require("custom.keybinds-setup")
 
   -- document existing key chains
-  require('which-key').register {
-    ['<leader>c'] = { name = '[C]ode', _ = 'which_key_ignore' },
-    ['<leader>d'] = { name = '[D]ocument', _ = 'which_key_ignore' },
-    ['<leader>g'] = { name = '[G]it', _ = 'which_key_ignore' },
-    ['<leader>h'] = { name = 'More git', _ = 'which_key_ignore' },
-    ['<leader>r'] = { name = '[R]ename', _ = 'which_key_ignore' },
-    ['<leader>s'] = { name = '[S]earch', _ = 'which_key_ignore' },
-    ['<leader>w'] = { name = '[W]orkspace', _ = 'which_key_ignore' },
-    ['<leader>t'] = { name = '[T]erminal', _ = 'which_key_ignore' },
-  }
+  require('which-key').add ({
+    {"<leader>c", desc = "[C]ode" },
+    {"<leader>d", desc = "[D]ocument" },
+    {"<leader>g", desc = "[G]it" },
+    {"<leader>h", desc = "More git" },
+    {"<leader>r", desc = "[R]ename" },
+    {"<leader>s", desc = "[S]earch" },
+    {"<leader>t", desc = "[T]erminal" },
+    {"<leader>w", desc = "[W]orkspace" },
+  })
 
 -- [[ Configure nvim-cmp ]]
 -- See `:help cmp`
